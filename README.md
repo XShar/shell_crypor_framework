@@ -2,7 +2,7 @@
 
 Всем привет !
 
-Большую популярность на форуме приобрела тема https://ru-sfera.org/threads/frejmvork-kriptora-protektora-s-antiehmuljaciej.3809/page-13
+Большую популярность на форуме приобрела тема https://ru-sfera.org/threads/frejmvork-kriptora-protektora-s-antiehmuljaciej.3809
 
 Но там проект получился какой-то скомканный, много там чего есть, но реализация мягко скажем ожидает лучшего, но что-то можно от туда взять как идею.
 
@@ -52,7 +52,18 @@ LoadPe - Это основной модуль криптора, по сути т
 
 Данное решение не воспринимайте как готовое решение, а как каркас для создания чего-то своего...)))
 
+Тема на форуме:
+
 Результаты на dyncheck.com:
 
+1)Статик детект на DarkComet (Изначально детектят все):
 
+![Image alt](https://github.com/XShar/shell_crypor_framework/static.jpg)
 
+2)Рантайм детект (DarkComet):
+
+![Image alt](https://github.com/XShar/shell_crypor_framework/runtime.jpg)
+
+3)Детект на безобидный файл (Рантайм):
+
+![Image alt](https://github.com/XShar/shell_crypor_framework/runtime_api.jpg)
