@@ -58,12 +58,12 @@ LoadPe - Это основной модуль криптора, по сути т
 
 1)Статик детект на DarkComet (Изначально детектят все):
 
-![Image alt](https://github.com/XShar/shell_crypor_framework/static.jpg)
+![Image alt](https://github.com/XShar/shell_crypor_framework/blob/master/static.jpg)
 
 2)Рантайм детект (DarkComet):
 
-![Image alt](https://github.com/XShar/shell_crypor_framework/runtime.jpg)
+![Image alt](https://github.com/XShar/shell_crypor_framework/blob/master/runtime.jpg)
 
 3)Детект на безобидный файл (Рантайм):
 
-![Image alt](https://github.com/XShar/shell_crypor_framework/runtime_api.jpg)
+![Image alt](https://github.com/XShar/shell_crypor_framework/blob/master/runtime_api.jpg)
