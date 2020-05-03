@@ -71,3 +71,5 @@ LoadPe - Это основной модуль криптора, по сути т
 ![Image alt](https://github.com/XShar/shell_crypor_framework/blob/master/runtime_api.jpg)
 
 То-что восклицательный знак, говорят можно за детект не считать, также на разные зверьки может реагировать по разному.)))
+
+Тема на форуме:https://ru-sfera.org/threads/frejmvork-kriptora-protektora-na-shell-kodax-x86-x64.3980/
